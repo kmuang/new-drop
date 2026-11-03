@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bring projects, files, and team conversations together with Officelite.">
+    <title>Officelite - Your team's work, together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero" id="top">
+        <div class="container">
+            <div class="topbar">
+                <a class="logo" href="#top" aria-label="Officelite home">
+                    <svg width="40" height="32" viewBox="0 0 40 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#5175FF" />
+                        <circle cx="28" cy="16" r="12" fill="#829CFF" />
+                    </svg>
+                    <span class="logo-text">officelite</span>
+                </a>
+                <nav class="primary-nav" aria-label="Main navigation">
+                    <a href="#why-heading">Why Officelite</a>
+                    <a href="#pricing-heading">Plans</a>
+                    <a class="nav-cta" href="#signup">Request access</a>
+                </nav>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Bring your team's work together in one clear workspace.</h1>
+                    <p class="hero-description">Keep projects moving without the app-hopping. Officelite brings your
+                        tasks, files, and team conversations together so everyone knows what’s next.</p>
+                    <ul class="hero-benefits" aria-label="Officelite benefits">
+                        <li>See priorities and progress at a glance</li>
+                        <li>Keep project files and conversations together</li>
+                        <li>Give every teammate a clear next step</li>
+                    </ul>
+                    <a class="btn-primary" id="hero-cta" href="#signup">Request early access</a>
+                </div>
+
+                <div class="hero-graphics" role="group" aria-label="Illustrative Officelite dashboard previews">
+                    <!-- Chart Graphic -->
+                    <div class="graphic-card chart-card">
+                        <svg class="chart-line" width="100%" height="100%" viewBox="0 0 360 180" role="img" aria-label="Illustrative project progress chart showing an upward trend"
+                            preserveAspectRatio="xMidYMid meet">
+                            <defs>
+                                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#5175FF;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#5175FF;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#5175FF;stop-opacity:0.2" />
+                                    <stop offset="100%" style="stop-color:#5175FF;stop-opacity:0" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Grid Lines -->
+                            <line x1="50" y1="30" x2="340" y2="30" stroke="#E8EEFF" stroke-width="1"
+                                stroke-dasharray="2,2" />
+                            <line x1="50" y1="60" x2="340" y2="60" stroke="#E8EEFF" stroke-width="1"
+                                stroke-dasharray="2,2" />
+                            <line x1="50" y1="90" x2="340" y2="90" stroke="#E8EEFF" stroke-width="1"
+                                stroke-dasharray="2,2" />
+                            <line x1="50" y1="120" x2="340" y2="120" stroke="#E8EEFF" stroke-width="1"
+                                stroke-dasharray="2,2" />
+                            <line x1="50" y1="150" x2="340" y2="150" stroke="#E8EEFF" stroke-width="1"
+                                stroke-dasharray="2,2" />
+
+                            <!-- Y-axis Labels -->
+                            <text x="35" y="35" fill="#747B95" font-size="10" text-anchor="end">100</text>
+                            <text x="35" y="65" fill="#747B95" font-size="10" text-anchor="end">80</text>
+                            <text x="35" y="95" fill="#747B95" font-size="10" text-anchor="end">60</text>
+                            <text x="35" y="125" fill="#747B95" font-size="10" text-anchor="end">40</text>
+                            <text x="35" y="155" fill="#747B95" font-size="10" text-anchor="end">20</text>
+
+                            <!-- X-axis Labels -->
+                            <text x="65" y="170" fill="#747B95" font-size="10" text-anchor="middle">Dec</text>
+                            <text x="125" y="170" fill="#747B95" font-size="10" text-anchor="middle">Jan</text>
+                            <text x="185" y="170" fill="#747B95" font-size="10" text-anchor="middle">Feb</text>
+                            <text x="245" y="170" fill="#747B95" font-size="10" text-anchor="middle">Mar</text>
+                            <text x="305" y="170" fill="#747B95" font-size="10" text-anchor="middle">Apr</text>
+
+                            <!-- Area under line -->
+                            <polygon points="65,110 125,80 185,70 245,75 305,50 305,150 65,150"
+                                fill="url(#areaGradient)" opacity="0.6" />
+
+                            <!-- Line Chart -->
+                            <polyline points="65,110 125,80 185,70 245,75 305,50" fill="none"
+                                stroke="url(#lineGradient)" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <!-- Data Points -->
+                            <circle cx="65" cy="110" r="4" fill="#5175FF">
+                                <animate attributeName="r" values="4;5;4" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="125" cy="80" r="4" fill="#5175FF">
+                                <animate attributeName="r" values="4;5;4" dur="2s" begin="0.2s"
+                                    repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="185" cy="70" r="4" fill="#5175FF">
+                                <animate attributeName="r" values="4;5;4" dur="2s" begin="0.4s"
+                                    repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="245" cy="75" r="4" fill="#5175FF">
+                                <animate attributeName="r" values="4;5;4" dur="2s" begin="0.6s"
+                                    repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="305" cy="50" r="6" fill="#5175FF">
+                                <animate attributeName="r" values="6;7;6" dur="2s" begin="0.8s"
+                                    repeatCount="indefinite" />
+                            </circle>
+
+                            <!-- Tooltip on last point -->
+                            <g class="chart-tooltip">
+                                <rect x="280" y="25" width="50" height="20" rx="4" fill="#5175FF" opacity="0.9" />
+                                <text x="305" y="39" fill="white" font-size="11" font-weight="600"
+                                    text-anchor="middle">+23%</text>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Stats Card -->
+                    <div class="graphic-card stats-card" role="img" aria-label="Illustrative team dashboard preview using sample data">
+                        <div class="circular-progress">
+                            <svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="#E8EEFF" stroke-width="8" />
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="#5AFFCD" stroke-width="8"
+                                    stroke-dasharray="339.292" stroke-dashoffset="44.108" stroke-linecap="round"
+                                    transform="rotate(-90 60 60)" />
+                                <text x="60" y="70" text-anchor="middle" fill="white" font-size="32"
+                                    font-weight="600">87%</text>
+                            </svg>
+                        </div>
+                        <div class="stat-value">98k</div>
+                        <span class="stat-caption">Illustrative data</span>
+                        <div class="stat-bars">
+                            <div class="stat-bar-item">
+                                <span class="stat-label">Tasks</span>
+                                <div class="stat-bar"></div>
+                            </div>
+                            <div class="stat-bar-item">
+                                <span class="stat-label">Project</span>
+                                <div class="stat-bar"></div>
+                            </div>
+                            <div class="stat-bar-item">
+                                <span class="stat-label">Team</span>
+                                <div class="stat-bar"></div>
+                            </div>
+                            <div class="stat-bar-item">
+                                <span class="stat-label">Followers</span>
+                                <div class="stat-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typography Card -->
+                    <div class="graphic-card typo-card" role="img" aria-label="Illustrative interface typography preview">
+                        <span class="typo-label" aria-hidden="true">Interface type</span>
+                        <span class="typo-text" aria-hidden="true">Aa</span>
+                    </div>
+                    <p class="visual-note">Illustrative product concept; all dashboard figures are sample data.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="why-officelite" aria-labelledby="why-heading">
+        <div class="container">
+            <div class="section-intro">
+                <p class="section-eyebrow">A calmer way to collaborate</p>
+                <h2 id="why-heading">Less busywork. More work that moves forward.</h2>
+                <p>Officelite is designed to make the everyday work of a team easier to follow and simpler to finish.</p>
+            </div>
+            <div class="value-grid">
+                <article class="value-card">
+                    <span class="value-number" aria-hidden="true">01</span>
+                    <h3>One shared picture</h3>
+                    <p>Bring plans, updates, and ownership into one place instead of chasing them across apps.</p>
+                </article>
+                <article class="value-card">
+                    <span class="value-number" aria-hidden="true">02</span>
+                    <h3>Clear next steps</h3>
+                    <p>Make priorities and responsibilities visible, so your team can spend less time checking in.</p>
+                </article>
+                <article class="value-card">
+                    <span class="value-number" aria-hidden="true">03</span>
+                    <h3>Room to focus</h3>
+                    <p>Keep project conversations and files close to the work they belong to.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" aria-labelledby="pricing-heading">
+        <div class="container">
+            <div class="section-intro pricing-intro">
+                <p class="section-eyebrow">Plans for every team</p>
+                <h2 id="pricing-heading">Choose a plan that fits your work.</h2>
+                <p>Requesting access doesn’t start a paid plan or take a payment.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card" id="pricing-basic">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">Free</span>
+                        </div>
+                        <p class="plan-billing">Up to 5 users included</p>
+                        <p class="plan-audience">For small teams starting out</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Core document collaboration</li>
+                        <li>2 GB storage</li>
+                        <li>For teams of up to 5</li>
+                    </ul>
+                    <button class="btn-secondary" type="button">Join Basic waitlist</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured" id="pricing-pro">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">9.99</span>
+                        </div>
+                        <p class="plan-billing">Per user, billed monthly</p>
+                        <p class="plan-audience">For teams that need integrations and more insights</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>All essential integrations</li>
+                        <li>50 GB storage</li>
+                        <li>More control and insights</li>
+                    </ul>
+                    <button class="btn-secondary featured" type="button">Join Pro waitlist</button>
+                </div>
+
+                <!-- Ultimate Plan -->
+                <div class="pricing-card" id="pricing-ultimate">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Ultimate</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">19.99</span>
+                        </div>
+                        <p class="plan-billing">Per user, billed monthly</p>
+                        <p class="plan-audience">For teams managing more work with added support</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Robust work management</li>
+                        <li>100 GB storage</li>
+                        <li>VIP support</li>
+                    </ul>
+                    <button class="btn-secondary" type="button">Join Ultimate waitlist</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="signup-section" id="signup" aria-labelledby="signup-heading">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-text">
+                    <p class="signup-label">OFFICELITE EARLY ACCESS</p>
+                    <h2 class="signup-heading" id="signup-heading">Be among the first to try Officelite.</h2>
+                    <p class="signup-description">Join the list for early access updates. No launch date has been announced. We’ll use your email only to contact you about Officelite.</p>
+                </div>
+                <div class="signup-form-wrapper">
+                    <form class="signup-form" id="signup-form" action="https://formspree.io/f/mvkkzoaw" method="POST">
+                        <div class="form-group">
+                            <label class="sr-only" for="email-input">Email address</label>
+                            <input type="email" id="email-input" name="email" class="email-input" autocomplete="email"
+                                placeholder="Enter your email address" aria-describedby="signup-status signup-note" required>
+                        </div>
+                        <input type="hidden" id="plan-input" name="plan" value="Early access">
+                        <button type="submit" class="btn-primary" id="submit-btn">Join the waitlist</button>
+                        <p class="form-status" id="signup-status" role="status" aria-live="polite"></p>
+                        <p class="signup-note" id="signup-note">You’ll see an on-screen confirmation when your request is received. Joining the waitlist does not start a subscription.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
